@@ -40,7 +40,8 @@ namespace aspnetcore
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.Configure<RabbitMQConfiguration>(Configuration.GetSection("RabbitMQConfiguration"));
-            //services.AddTransient<RabbitMQSerializer<GenericMessage>>();
+            // if the serializer is needed
+            // services.AddSingleton<RabbitMQSerializer<GenericMessage>>();
             services.AddScoped<IMessagePublisher<GenericMessage>, RabbitMQPublisher<GenericMessage>>();
 
             services.AddSwaggerGen(options =>

@@ -37,7 +37,8 @@ namespace generichost
                 {
                     // RabbitMQ configuration
                     services.Configure<RabbitMQConfiguration>(hostContext.Configuration.GetSection("RabbitMQConfiguration"));
-                    //services.AddSingleton<RabbitMQSerializer<GenericMessage>>();
+                    // if the serializer is needed
+                    // services.AddSingleton<RabbitMQSerializer<GenericMessage>>();
                     services.AddScoped<IProcessor<GenericMessage>, GenericProcessor>();
                     services.AddHostedService<RabbitMQSubscriberHostedService<GenericProcessor, GenericMessage>>();
                 })

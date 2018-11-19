@@ -8,6 +8,10 @@ using System.Xml.Serialization;
 
 namespace rabbitmq
 {
+    /// <summary>
+    /// Utility library to help on serialization when binary messages are used
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class RabbitMQSerializer<T> where T: IGenericMessage
     {
         public T DeserialiseFromXml(byte[] messageBody)

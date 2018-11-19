@@ -21,12 +21,6 @@ namespace aspnetcore.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "Administration", "CoverMe", "Facesheet", "Retrocheck", "Securitization" };
-        }
-
-        [HttpGet]
         [Route("publish")]
         public ActionResult PostMessage([FromQuery]Guid messageId)
         {
