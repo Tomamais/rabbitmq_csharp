@@ -1,5 +1,5 @@
 # rabbitmq_csharp
-## A straightforward library do use rabbitmq with C# without several of its complexities
+## A straightforward library to use rabbitmq with C# without several of its complexities
 
 This is not a complete RabbitMQ library, just because it's not. We have amazing options for this on the official RabbitMQ documentation:
 
