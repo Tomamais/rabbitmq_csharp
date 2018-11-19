@@ -1,5 +1,5 @@
 # rabbitmq_csharp
-##A straightforward library do use rabbitmq with C# without several of it's complexities
+## A straightforward library do use rabbitmq with C# without several of it's complexities
 
 This is not a complete RabbitMQ library, just because it's not. We have amazing options for this on the official RabbitMQ documentation:
 
@@ -17,6 +17,6 @@ I hope you like it!
 
 :)
 
-##Other stuff
+## Other stuff
 
 As I was making experiments, I've tried other libraries and some projects on this repository reflect that. To be concise, I've named the project with $"{purpose}_{library}". As you might see, at least on the first commit, I've made some experimets with the masstransit library. If you don't want to use it, don't worry. Just ignore it.
