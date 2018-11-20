@@ -37,8 +37,8 @@ namespace rabbitmq
                 var messageJson = JsonConvert.SerializeObject(message);
                 var body = Encoding.UTF8.GetBytes(messageJson);
 
-                channel.BasicPublish(exchange: _configuration.PublishingQueue.ExchangeName,
-                                     routingKey: _configuration.PublishingQueue.RoutingKey,
+                channel.BasicPublish(exchange: _configuration.PublisherQueue.ExchangeName,
+                                     routingKey: _configuration.PublisherQueue.RoutingKey,
                                      basicProperties: null,
                                      body: body);
 

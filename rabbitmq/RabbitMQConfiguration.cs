@@ -12,7 +12,7 @@ namespace rabbitmq
         public string HostName { get; set; }
         public ushort Port { get; set; }
         public SubscribedQueue SubscribedQueue { get; set; }
-        public PublishingQueue PublishingQueue { get; set; }
+        public PublisherQueue PublisherQueue { get; set; }
     }
 
     public class SubscribedQueue
@@ -23,7 +23,7 @@ namespace rabbitmq
         public bool AutoDelete { get; set; }
     }
 
-    public class PublishingQueue
+    public class PublisherQueue
     {
         public string ExchangeName { get; set; }
         public string QueueName { get; set; }
